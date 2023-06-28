@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Idade e Sexo</title>
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+<body>
+   <header>
+    <h1>Verificador de Idade</h1>
+   </header>
+   <main>
+        <form action="" method="get">
+            <div id="nasc">
+                <p>
+                    <label for="ano">Ano de Nascimento:</label>
+                    <input type="number" name="ano" id="ano">
+                </p>
+                <p>
+                    Sexo:
+                    <input type="radio" name="radiosx" id="masc" value="m"checked> <label for="masc">Masculino</label>
+                    <input type="radio" name="radiosx" id="fem" value="f">
+                    <label for="fem">Feminino</label>
+                </p>
+                <p><input type="button" value="Verificar" onclick="verificar()"></p>
+            </div>
+            <div id="res">
+                <img id="img" src="" alt="">
+            </div>
+        </form>
+   </main>
+
+   <footer>
+    <p>Site criado por <a href="https://github.com/ederneyjunior" target="_blank">Ederney</a> para o <a href="https://cursoemvideo.com" target="_blank">CursoEmVideo</a>.</p>
+   </footer>
+
+   <script src="index.js"></script>
+</body>
+</html>
