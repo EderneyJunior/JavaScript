@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador</title>
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+<body>
+   <header>
+    <h1>Vamos contar</h1>
+   </header>
+   <main>
+        <form action="" method="get">
+            <div id="cont">
+                <p>
+                    <label for="in">Inicio:</label>
+                    <input type="number" name="in" id="in">
+                </p>
+                <p>
+                    <label for="fim">Fim:</label>
+                    <input type="number" name="fim" id="fim">
+                </p>
+                <p>
+                    <label for="pass">Passo:</label>
+                    <input type="number" name="pass" id="pass">
+                </p>
+                <p><input type="button" value="Contar" onclick="contar()"></p>
+            </div>
+            <div id="res">
+                <p>Preparando a contagem...</p>
+            </div>
+        </form>
+   </main>
+
+   <footer>
+    <p>Site criado por <a href="https://github.com/ederneyjunior" target="_blank">Ederney</a> para o <a href="https://cursoemvideo.com" target="_blank">CursoEmVideo</a>.</p>
+   </footer>
+
+   <script src="index.js"></script>
+</body>
+</html>
