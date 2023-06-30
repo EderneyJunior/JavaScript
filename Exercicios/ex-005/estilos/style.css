@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+body {
+    width: 95vw;
+    height: 95vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(70, 70, 235);
+}
+
+header h1 {
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.212);
+}
+main {
+    background-color: white;
+    max-width: 500px;
+    margin: auto;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 9px rgba(0, 0, 0, 0.384);
+}
+
+select#selnum {
+    width: 200px;
+}
+
+div {
+    margin: 10px;
+}
+
+input#fin {
+    margin-left: 10px;
+}
+
+footer {
+    text-align: center;
+    color: white;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.212);
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
