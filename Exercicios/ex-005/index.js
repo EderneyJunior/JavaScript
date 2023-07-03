@@ -1,5 +1,5 @@
 let num = document.getElementById('txtn')
-let selnum = document.getElementById('selnum')
+let lista = document.getElementById('selnum')
 let res = document.getElementById('res')
 let valores = []
 
@@ -11,25 +11,23 @@ let valores = []
     }
 }
 
-function isLista(n, l) {
+function inLista(n, l) {
     for (c in l) {
-        res = true
         if (l[c] == n) {
-            res = false
+            return false
         }
     }
-
-    return res
+    return true
 }
 
 function add() {
-    if (isNum(num.value) && isLista(num.value, valores)) {
-        let n = Number(num.value)
+    if (isNum(num.value) && inLista(num.value, valores)) {
+
+        valores.push(Number(num.value))
         let item = document.createElement('option')
 
-        valores.push(n)
-        item.text = `O numero ${n} foi adicionado.`
-        selnum.appendChild(item)
+        item.text = `Valor ${Number(num.value)} adicionado.`
+        lista.appendChild(item)
         res.innerHTML = ''
     }else {
         alert('Valor inválido ou já encontrado na lista.')
@@ -61,7 +59,7 @@ function finalizar() {
 
             media = soma / tot
             res.innerHTML = ''
-            res.innerHTML = `<p>Ao todo, temos ${tot} números cadastrados.</p>`
+            res.innerHTML += `<p>Ao todo, temos ${tot} números cadastrados.</p>`
             res.innerHTML += `<p>O maior número inserido foi ${maior}</p>`
             res.innerHTML += `<p>O menor número inserido foi ${menor}</p>`
             res.innerHTML += `<p>Somando todos os valores, temos ${soma}</p>`
