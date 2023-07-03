@@ -21,6 +21,10 @@ main {
     box-shadow: 5px 5px 9px rgba(0, 0, 0, 0.384);
 }
 
+div {
+    margin: 10px;
+}
+
 footer {
     text-align: center;
     color: white;
